@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic the Gathering Database</title>
+    <link rel="stylesheet" href="mystyle.css" type="text/css">
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script> -->
+    <script type = "module" src="website.js"></script>
+</head>
+<body>
+    <h1>Magic the Gathering Card Database</h1>
+
+    <h2>Add Card</h2>
+    <input type="text" id="name" placeholder="Card Name">
+    <input type="text" id="manaCost" placeholder="Mana Cost">
+    <input type="text" id="power" placeholder="Power">
+    <input type="text" id="toughness" placeholder="Toughness">
+    <input type="text" id="type" placeholder="Type">
+    <input type="text" id="subtype" placeholder="Subtype">
+    <input type="text" id="set" placeholder="Set">
+    <input type="text" id="rarity" placeholder="Rarity">
+    <input type="text" id="text" placeholder="Text">
+    <button id="addCard">Add Card</button>
+
+    <h2>Update Card</h2>
+    <input type="text" id="updateId" placeholder="Card ID">
+    <input type="text" id="updateName" placeholder="New Name">
+    <button id="updateCard">Update Card</button>
+
+    <h2>Delete Card</h2>
+    <input type="text" id="deleteId" placeholder="Card ID">
+    <button id="deleteCard">Delete Card</button>
+
+    <h2>All Cards</h2>
+    <ul id="cardList"></ul>
+</body>
+</html>
